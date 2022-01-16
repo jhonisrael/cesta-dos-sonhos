@@ -1,0 +1,25 @@
+#catalogo .block img {
+	width: 100%;
+	height: 270px;
+	transition: 1.5s;
+	object-fit: cover;
+	border-radius: 10px;
+	border: 1.5px solid white;
+}
+
+#catalogo .block img:hover {
+	cursor: pointer;
+	border: 1.5px solid #3d8e97;
+}
+
+#catalogo .block p {
+	font-size: 25px;
+}
+
+
+@media screen and (max-width: 767px) {	
+    #catalogo .block img {
+		height: 250px;
+	}
+	
+}

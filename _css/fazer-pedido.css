@@ -1,0 +1,52 @@
+form {
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+label,input, textarea,select {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+input, textarea,select {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+input[type="text"],[type="email"],[type="time"],[type="number"],select,textarea {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #888888;
+    outline: 0;
+    margin-top: 5px;
+}
+
+input[type="time"] {
+    width: 100px;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+textarea {
+    width: 350px;
+    height: 100px;
+    resize: none;
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
