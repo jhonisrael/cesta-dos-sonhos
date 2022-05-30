@@ -28,7 +28,7 @@
 				<div class="container">
 					<h1 class="mb-5 my-md-5 text-center display-4 text-secondary"> Fazer Pedido </h1>
 
-					<form class="quicksand" method="POST" action="fazer-pedido.php" oninput="calc_total();">
+					<form class="quicksand" action="<?php echo $_SERVER["PHP_SELF"]?>" method="POST"  oninput="calc_total();">
 						<fieldset id="contato">
 							<legend> Informações de Contato </legend>
 
@@ -86,7 +86,7 @@
 							</label>
 
 							<label>
-								Comentários(opcional): <br/>
+								Comentários: <br/>
 								<textarea name="descricao" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
 							</label>
 						</fieldset>
@@ -137,8 +137,32 @@
 				</div>
 			</section>
 		</main>
+
+
 <?php
-		include('componente/rodape.html');
+require './Conexao/conexao.php';
+
+		$nome = $_POST['nome'];
+		$email = $_POST['email'];
+		$descricao = $_POST['descricao'];
+
+		//$sql = "select * from teste where nome = '$nome'";
+		
+		//$resultado = mysqli_query($mysqli_connection, $sql);
+		//verifica campo vazio
+if ($nome == null || $email == null || $descricao == null) {
+	echo "nome, email ou comentario vazio!";
+  } else {
+  //----------------//
+		
+		$sql = "INSERT INTO cesta_dos_sonhos VALUES ('', '$nome', '$email', '$descricao')";		
+		if (mysqli_query($mysqli_connection, $sql)) {
+			echo "enviado com sucesso!";
+		} else {
+		  echo "Error: " . mysqli_error($mysqli_connection);
+		}
+		mysqli_close($mysqli_connection);
+	}
 ?>
 	</body>
 
