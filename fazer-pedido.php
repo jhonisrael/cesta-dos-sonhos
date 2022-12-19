@@ -155,7 +155,7 @@ if ($nome == null || $email == null || $descricao == null) {
   } else {
   //----------------//
 		
-		$sql = "INSERT INTO cesta_dos_sonhos VALUES ('', '$nome', '$email', '$descricao')";		
+		$sql = "INSERT INTO pedidos VALUES ('', '$nome', '$email', '$descricao')";		
 		if (mysqli_query($mysqli_connection, $sql)) {
 			echo "enviado com sucesso!";
 		} else {
