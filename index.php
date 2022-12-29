@@ -19,34 +19,28 @@
 		<main class="py-5 bg-light">
 			<section id="catalogo" class="my-5">
 				<div class="container">
-					<h1 class="mb-5 my-md-5 text-center display-4 text-secondary"> Modelos De Cestas </h1>
-
+				     <h1 class="mb-5 my-md-5 text-center display-4 text-secondary"> Modelos De Cestas </h1>
 					<div class="row text-center quicksand">
 						<div class="col-12 col-md-4 p-4 block">
 							<img class="shadow" src="_img/main/index/img1.jpg" alt="chocolate">	
 							<p class="text-secondary mb-0 mt-3"> Cesta de chocolate </p>
 						</div>
-
 						<div class="col-12 col-md-4 p-4 block">
 							<img class="shadow" src="_img/main/index/img2.png" alt="casal">	
 							<p class="text-secondary mb-0 mt-3"> Cesta casal</p>
 						</div>
-
 						<div class="col-12 col-md-4 p-4 block">
 							<img class="shadow" src="_img/main/index/img3.png" alt="papai">	
 							<p class="text-secondary mb-0 mt-3"> Cesta Papai </p>
 						</div>
-
 						<div class="col-12 col-md-4 p-4 block">
 							<img class="shadow" src="_img/main/index/img4.png" alt="mamãe">	
 							<p class="text-secondary mb-0 mt-3"> Cesta Mamãe </p>
 						</div>
-
 						<div class="col-12 col-md-4 p-4 block">
 							<img class="shadow" src="_img/main/index/img5.png" alt="aniversario">	
 							<p class="text-secondary mb-0 mt-3"> Cesta Aniversário </p>
 						</div>
-
 						<div class="col-12 col-md-4 p-4 block">
 							<img class="shadow" src="_img/main/index/img6.png" alt="namorados">	
 							<p class="text-secondary mb-0 mt-3"> Cesta Namorados </p>
